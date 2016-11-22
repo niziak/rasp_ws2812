@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <stdint.h>
 
+#include <version.h>
+
 //#inclue <sys/types.h>
 
 #include "ws2811.h"
@@ -119,6 +121,7 @@ void render ()
 
 int main(int argc, char *argv[])
 {
+    fprintf(stdout, "Version " VERSION_STR);
     //matrix = malloc(sizeof(ws2811_led_t) * width * height);
 
     if ((ret = ws2811_init(&ledstring)) != WS2811_SUCCESS)

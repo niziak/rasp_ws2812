@@ -1,0 +1,8 @@
+// the configured options and settings for Tutorial
+#define VERSION_MAJOR @ws2812_VERSION_MAJOR@
+#define VERSION_MINOR @ws2812_VERSION_MINOR@
+
+#define STR_HELPER(x) #x
+#define STR(x) STR_HELPER(x)
+
+#define VERSION_STR STR(VERSION_MAJOR) "." STR(VERSION_MINOR)
